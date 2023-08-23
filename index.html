@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td{border:1px solid black;}
+table,td{border:0px;}
+td,th{width:70px;height:70px}
+button{width:90px;height:70px;font-size:200%;}
+</style>
+<body>
+<table style="width:350px;height:350px">
+<tr>
+<th colspan="4" id="demo"></th>
+</tr>
+<tr>
+<td id="demo1"><button onclick="myfunc1()">1</button></td>
+<td id="demo2"><button onclick="myfunc2()">2</button></td>
+<td id="demo3"><button onclick="myfunc3()">3</button></td>
+<td id="demo4"><button onclick="myfunc4()">+</button></td>
+</tr>
+<tr>
+<td id="demo5"><button onclick="myfunc5()">4</button></td>
+<td id="demo6"><button onclick="myfunc6()">5</button></td>
+<td id="demo7"><button onclick="myfunc7()">6</button></td>
+<td id="demo8"><button onclick="myfunc8()">-</button></td>
+</tr>
+<tr>
+<td id="demo9"><button onclick="myfunc9()">7</button></td>
+<td id="demo10"><button onclick="myfunc10()">8</button></td>
+<td id="demo11"><button onclick="myfunc11()">9</button></td>
+<td id="demo12"><button onclick="myfunc12()">*</button></td>
+</tr>
+<tr>
+<td id="demo13"><button onclick="myfunc13()">.</button></td>
+<td id="demo14"><button onclick="myfunc14()">0</button></td>
+<td id="demo15"><button onclick="myfunc15()">=</button></td>
+<td id="demo16"><button onclick="myfunc16()">%</button></td>
+</tr>
+</table>
+</body>
+<script>
+let a="";
+function myfunc1(){a+="1";}
+function myfunc2(){a+="2";}
+function myfunc3(){a+="3";}
+function myfunc4(){if(a.length != 0) {a+="+";};}
+function myfunc5(){a+="4";}
+function myfunc6(){a+="5";}
+function myfunc7(){a+="6";}
+function myfunc8(){if(a.length != 0) {a+="-";};}
+function myfunc9(){a+="7";}
+function myfunc10(){a+="8";}
+function myfunc11(){a+="9";}
+function myfunc12(){if(a.length != 0) {a+="*";};}
+function myfunc13(){if(a.length != 0) {a+=".";};}
+function myfunc14(){a+="0";}
+function myfunc15(){document.getElementById("demo").innerHTML=eval(a);}
+function myfunc16(){if(a.length != 0) {a+="%";};}
+</script>
+</html>
+
